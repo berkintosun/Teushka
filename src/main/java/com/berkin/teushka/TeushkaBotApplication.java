@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TeushkaBotApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TeushkaBotApplication.class, args);
+		SpringApplication.run(TeushkaBotApplication.class, args); System.out.println("test");
 	}
 
 }
