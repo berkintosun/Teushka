@@ -1,7 +1,11 @@
 package com.berkin.teushka.telegram.dto;
 
-public class Update {
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
 
-    private int update_id;
-    private
+@Data
+public class Update {
+    @JsonProperty("update_id")
+    private int updateId;
+    private Message message;
 }
