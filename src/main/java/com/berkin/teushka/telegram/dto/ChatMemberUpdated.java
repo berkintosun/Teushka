@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
-public class ChatMemberUpdated {
+public class ChatMemberUpdated extends ChatMember {
     private Chat chat;
     private User from;
     private int date;
