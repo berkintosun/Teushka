@@ -1,0 +1,24 @@
+server:
+  port: 8443
+  ssl:
+    enabled: true
+    key-store-type: PKCS12
+    key-store: classpath:keystore/teushka.p12
+    key-store-password: ENC(ZG8wkfiEHfjw+KkKXNi4Ko/PlAZIj7WyTq+ZH3KTA/c=)
+    key-alias: teushka
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      dll-auto: none
+      show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/teushka
+    username: teushka
+    password: ENC(yN3UqENKzYR1icqKidpqpA==)
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
